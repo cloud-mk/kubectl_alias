@@ -1,0 +1,28 @@
+{
+source <(kubectl completion bash) # setup autocomplete in bash into the current shell, bash-completion package should be installed first.
+echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permanently to your bash shell.
+alias k=kubectl
+complete -F __start_kubectl k
+
+ns="-n kube-system"
+oy="-o yaml"
+dr="--dry-run=client"
+oc="-o=custom-columns"
+oj="-o=jsonpath"
+
+alias des="kubectl describe"
+alias get="kubectl get"
+alias del="kubectl delete"
+alias exp="kubectl explain --recursive"
+alias logs="kubectl logs -f"
+alias exec="kubectl exec -it"
+alias cer="kubectl create"
+alias apy="kubectl apply -f"
+
+
+cat>~/.vimrc <<EOF
+set st=2 sw=2 sts=2 ruler number expandtab
+syntax on
+filetype indent plugin on
+EOF
+}
