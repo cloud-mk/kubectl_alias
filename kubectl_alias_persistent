@@ -22,7 +22,7 @@ alias cer="kubectl create"
 alias apy="kubectl apply -f"
 EOF
 
-cat>~/.vimrc <<EOF
+cat>>~/.vimrc <<EOF
 set st=2 sw=2 sts=2 ruler number expandtab
 syntax on
 filetype indent plugin on
