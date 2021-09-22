@@ -1,6 +1,8 @@
 {
 source <(kubectl completion bash) # setup autocomplete in bash into the current shell, bash-completion package should be installed first.
 echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permanently to your bash shell.
+
+cat>>~/.bashrc <<EOF
 alias k=kubectl
 complete -F __start_kubectl k
 
@@ -18,7 +20,7 @@ alias logs="kubectl logs -f"
 alias exec="kubectl exec -it"
 alias cer="kubectl create"
 alias apy="kubectl apply -f"
-
+EOF
 
 cat>~/.vimrc <<EOF
 set st=2 sw=2 sts=2 ruler number expandtab
