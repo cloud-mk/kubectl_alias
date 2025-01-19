@@ -25,3 +25,12 @@ sudo apt-get install helm
 ## aws cli
 ## k3s
 ## ansible
+## kubectx and kubens
+https://github.com/ahmetb/kubectx?tab=readme-ov-file#manual-installation-macos-and-linux
+```
+sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx
+sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx
+sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
+```
+## kube-ps1
+https://github.com/jonmosco/kube-ps1
