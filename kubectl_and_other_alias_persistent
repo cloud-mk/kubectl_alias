@@ -21,6 +21,9 @@ alias logs="kubectl logs -f"
 alias exec="kubectl exec -it"
 alias cer="kubectl create"
 alias apy="kubectl apply -f"
+
+alias tf="terraform"
+
 EOF
 
 cat>>~/.vimrc <<EOF
