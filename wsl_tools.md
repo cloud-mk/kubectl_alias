@@ -1,4 +1,5 @@
 ## terraform
+https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 ## helm
 ```
 curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
