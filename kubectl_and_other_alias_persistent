@@ -23,6 +23,8 @@ alias cer="kubectl create"
 alias apy="kubectl apply -f"
 
 alias tf="terraform"
+alias kc=kubectx
+alias kn=kubens
 
 EOF
 
