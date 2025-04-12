@@ -1,8 +1,8 @@
 {
-source <(kubectl completion bash) # setup autocomplete in bash into the current shell, bash-completion package should be installed first.
-echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permanently to your bash shell.
-alias k=kubectl
-complete -F __start_kubectl k
+
+echo 'source <(kubectl completion bash)' >>~/.bashrc
+echo 'alias k=kubectl' >>~/.bashrc
+echo 'complete -o default -F __start_kubectl k' >>~/.bashrc
 
 ns="-n kube-system"
 oy="-o yaml"
@@ -18,7 +18,10 @@ alias logs="kubectl logs -f"
 alias exec="kubectl exec -it"
 alias cer="kubectl create"
 alias apy="kubectl apply -f"
+alias kc=kubectx
+alias kn=kubens
 
+alias tf=terraform
 
 cat>>~/.vimrc <<EOF
 set st=2 sw=2 sts=2 ruler number expandtab
